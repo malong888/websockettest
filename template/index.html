@@ -22,6 +22,11 @@
             ws.send(msg);
             $("#msg").val("");
         }
+        $(document).keyup(function(event){
+          if(event.keyCode ==13){
+            $("a").trigger("click");
+          }
+        });
     </script>
 </body>
 </html>
